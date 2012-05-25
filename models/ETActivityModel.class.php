@@ -143,7 +143,9 @@ public function create($type, $member, $fromMember = null, $data = null)
 		list($subject, $body) = call_user_func($projections[self::PROJECTION_EMAIL], $activity, $member);
 
 		// Send the email, prepending/appending a common email header/footer.
-		sendEmail($member["email"], $subject, sprintf(T("email.header"), $member["username"]).$body.sprintf(T("email.footer"), ""));
+		sendEmail($member["email"], $subject, sprintf(T("email.header"), $member["username"]).$body);
+		// disabled footer (unsubscribe link is still a todo)
+		// .sprintf(T("email.footer"),"")
 
 		// Revert back to esoTalk's old language definitions.
 		ET::revertLanguageState();

@@ -83,7 +83,7 @@ input.text:focus, textarea:focus {border-color:#999; outline:0; -webkit-box-shad
 
 
 /* Buttons */
-.button {background:#e0e0e0 url(button.png) repeat-x; text-shadow:#fff 0 1px; color:#333; font-weight:bold; border:1px solid #bbb; -webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.06); box-shadow:0 1px 0 rgba(0, 0, 0, 0.06); margin-bottom:1px}
+.button {background:#e0e0e0 url(button.png) repeat-x; text-shadow:#fff 0 1px; color:#333; font-weight:bold; border:1px solid #bbb; -webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.06); box-shadow:0 1px 0 rgba(0, 0, 0, 0.06); margin-bottom:1px;letter-spacing:1px;}
 .button:hover, .button:active {border-color:#bbb}
 .button:active {background-color:#d3d3d3; background-position:0 -40px; color:#333}
 .button.disabled {border-color:#ccc !important; background:#f2f2f2 !important; color:#999 !important; -webkit-box-shadow:none !important; box-shadow:none !important}

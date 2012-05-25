@@ -27,7 +27,7 @@
 
 /* Forum Settings */
 #adminSettings .form li {padding-left:180px}
-#adminSettings .form li > label {margin-left:-180px; width:170px}
+#adminSettings .form li > label {margin-left:-180px; width:170px;text-align:right;}
 
 
 /* Manage channels */
@@ -63,7 +63,7 @@
 
 #pluginList > li .pluginControls {margin:-2px 0 0; float:right; font-size:100%}
 #pluginList > li .pluginControls > a {display:inline-block}
-#pluginList .toggle {width:60px; text-align:center}
+#pluginList .toggle {width:64px; text-align:center}
 
 #pluginList > li .popupWrapper {display:none}
 #pluginList > li:hover .popupWrapper, #pluginList .popupWrapper.active {display:inline-block}
