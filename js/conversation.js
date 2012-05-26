@@ -1046,14 +1046,11 @@ wrapText: function(textarea, tagStart, tagEnd, selectArgument, defaultArgumentVa
 
 // Toggle preview on an editing area.
 togglePreview: function(id, preview) {
-//alert($("#" + id + "-preview").css('display'));
 	// If the preview box is checked...
-	if (!$(preview).hasClass('previewOn')) {
+	if (preview && !$("#" + id + " .previewReply").hasClass('previewOn')) {
 		// Hide the formatting buttons.
 		$("#" + id + " .formattingButtons").hide();
-		// $("#" + id + "-preview").html(""); gone
-		$(preview).addClass('previewOn');
-		$(preview).html('Edit Post');
+		$("#" + id + " .previewReply").html('Edit Post').addClass('previewOn');
 
 		// Get the formatted post and show it.
 		$.ETAjax({
@@ -1074,13 +1071,12 @@ togglePreview: function(id, preview) {
 	}
 
 	// The preview box isn't checked...
-	else {
+	else if($("#" + id + " .previewReply").hasClass('previewOn')) {
 		// Show the formatting buttons and the textarea; hide the preview area.
 		$("#" + id + " .formattingButtons").show();
 		$("#" + id + " textarea").show();
 		$("#" + id + "-preview").hide();
-		$(preview).removeClass('previewOn');
-		$(preview).html('Preview Post');
+		$("#" + id + " .previewReply").removeClass('previewOn').html('Preview Post');
 	}
 }
 
