@@ -538,6 +538,7 @@ code {background:#eee}
 #memberInfo {float:left}
 #memberInfo h1 {margin:0 0 5px 0}
 #memberInfo p {margin:5px 0 0 0}
+#memberInfo p#memberEmail { display:inline-block; }
 #memberProfile .popupWrapper {float:right; margin:0 0 10px}
 #memberActions {clear:right; float:right; text-align:right; list-style-type:none; margin:0; padding:0}
 #memberActions li {margin-bottom:7px}

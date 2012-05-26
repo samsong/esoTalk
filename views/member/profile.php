@@ -29,7 +29,7 @@ if ($lastAction) echo "<".(!empty($lastAction[1]) ? "a href='{$lastAction[1]}'" 
 
 <?php
 // Output the email if the viewer is an admin.
-if (ET::$session->isAdmin()): ?><p class='subText'><?php echo sanitizeHTML($member["email"]); ?></p><?php endif; ?>
+if (ET::$session->isAdmin()): ?><p id='memberEmail' class='subText'><?php echo sanitizeHTML($member["email"]); ?></p><?php endif; ?>
 
 <p id='memberGroup' class='subText'><?php echo memberGroup($member["account"], $member["groups"], true); ?></p>
 <p id='memberLastActive' class='subText'><?php printf(T("Last active %s"), "<span title='".date(T("date.full"), $member["lastActionTime"])."'>".relativeTime($member["lastActionTime"], true)."</span>"); ?></p>

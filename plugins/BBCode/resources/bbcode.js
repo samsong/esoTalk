@@ -1,5 +1,6 @@
 var BBCode = {
 
+center: function(id) {ETConversation.wrapText($("#"+id+" textarea"), "[center]", "[/center]");},
 bold: function(id) {ETConversation.wrapText($("#"+id+" textarea"), "[b]", "[/b]");},
 italic: function(id) {ETConversation.wrapText($("#"+id+" textarea"), "[i]", "[/i]");},
 strikethrough: function(id) {ETConversation.wrapText($("#"+id+" textarea"), "[s]", "[/s]");},

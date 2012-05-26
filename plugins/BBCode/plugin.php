@@ -52,6 +52,7 @@ public function handler_conversationController_getEditControls($sender, &$contro
 	addToArrayString($controls, "header", "<a href='javascript:BBCode.header(\"$id\");void(0)' title='".T("Header")."' class='bbcode-h'><span>".T("Header")."</span></a>", 0);
 	addToArrayString($controls, "italic", "<a href='javascript:BBCode.italic(\"$id\");void(0)' title='".T("Italic")."' class='bbcode-i'><span>".T("Italic")."</span></a>", 0);
 	addToArrayString($controls, "bold", "<a href='javascript:BBCode.bold(\"$id\");void(0)' title='".T("Bold")."' class='bbcode-b'><span>".T("Bold")."</span></a>", 0);
+	addToArrayString($controls, "center", "<a href='javascript:BBCode.center(\"$id\");void(0)' title='".T("Center")."' class='bbcode-center'><span>".T("Center")."</span></a>", 0);
 }
 
 
@@ -106,6 +107,9 @@ public function handler_format_format($sender)
 
 	// Strikethrough: [s]strikethrough[/s]
 	$sender->content = preg_replace("/\[s\](.*?)\[\/s\]/si", "<del>$1</del>", $sender->content);
+	
+	// Center: [center]center text[/center]
+	$sender->content = preg_replace("|\[center\](.*?)\[/center\]|si", "<center>$1</center>", $sender->content);
 
 	// Headers: [h]header[/h]
 	$sender->content = preg_replace("/\[h\](.*?)\[\/h\]/", "</p><h4>$1</h4><p>", $sender->content);
