@@ -1,5 +1,4 @@
-.emoticon {display:inline-block}
-.emoticon span {display:inline-block; text-indent:-9999px; width:16px; height:16px; background:url(emoticons.png); background-repeat:no-repeat;}
+.emoticon {display:inline-block; text-indent:-9999px; width:16px; height:16px; background:url(emoticons.png); background-repeat:no-repeat;}
 .formattingButtons .emoticon{background-position:0 0; margin-top:-2px;}
 #emoticonDropDown {position:absolute; padding: 12px 2px 2px 2px; z-index:100;}
 #emoticonDropDown div{border:1px solid #eee;background-color: #fff; padding:2px}
