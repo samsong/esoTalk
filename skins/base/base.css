@@ -230,7 +230,7 @@ span.highlight {background:#fdef34; border:1px solid #fcef98; padding:1px 3px; b
 .sheet .section, .sheet h3, .sheet .buttons {padding:10px 15px; margin:0}
 .sheet .section, .sheet .buttons {border-top:1px solid #d5d5d5}
 .sheet .section {padding:15px}
-.sheet .buttons {overflow:hidden}
+.sheet .buttons {overflow:hidden; background:#F2F2F2}
 .sheet .buttons .button {margin-left:10px; float:right}
 .sheet .buttons small {float:left; font-size:100%; margin:5px 0}
 
@@ -529,12 +529,12 @@ code {background:#eee}
 .memberList .col-lastActive {width:25%; font-size:85%}
 .memberList .col-replies {width:10%; padding:0}
 .memberList .avatar {margin-right:5px}
-.memberList .group, .memberList .controls, .memberList .online {margin-left:5px}
+.memberList .group, .memberList .controls, .memberList .online {margin:0 5px}
 
 
 /* Member profile */
 #memberProfile .avatar {float:left; padding:3px; border:1px solid #d1d1d1; -webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.05); box-shadow:0 1px 0 rgba(0, 0, 0, 0.05); border-radius:4px; background:#fff; margin-right:15px}
-#memberProfile .online {margin-left:5px; vertical-align:0}
+#memberProfile .online {margin:0 5px; vertical-align:0}
 #memberInfo {float:left}
 #memberInfo h1 {margin:0 0 5px 0}
 #memberInfo p {margin:5px 0 0 0}
@@ -628,6 +628,8 @@ input.error, input.error:focus {border-color:#f59e79 !important}
 /* Buttons */
 .button {height:23px; cursor:pointer; padding:1px 10px 3px; border:1px solid #bbb; border-radius:3px; line-height:19px; margin:0; font-size:85%}
 .button.big {height:26px; font-size:100%; padding:0 10px 2px; line-height:25px}
+.button.cancel { opacity:0.5}
+.button.cancel:hover { opacity:1}
 
 .button span {margin:-3px 2px -1px -2px; vertical-align:middle}
 .button .icon-dropdown {vertical-align:1px; margin:0 0 0 2px}
