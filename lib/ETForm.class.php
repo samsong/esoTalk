@@ -463,6 +463,20 @@ public function button($name, $label = "", $attributes = array())
 	return "<input type='submit' name='$name' value='$label'".$this->getAttributes($attributes)."/>";
 }
 
+/**
+ * Get the HTML code for a label.
+ *
+ * @param string $id The id of form input label is for.
+ * @param string $text The text within the label.
+ * @param array $attributes An array of attributes to add to the input tag.
+ * @return string
+ */
+public function label($id = "", $text = "", $attributes = array())
+{
+	$this->addClass($attributes, "label");
+	return "<label for='$id' ".$this->getAttributes($attributes).">$text</label>";
+}
+
 
 /**
  * Get the HTML code for a "save changes" button, with the name "save".

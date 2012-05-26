@@ -16,10 +16,13 @@ $conversation = $data["conversation"];
 // Using the provided form object, construct a textarea, save/discard draft buttons, and a submit button.
 $body = $form->input("content", "textarea", array("cols" => "200", "rows" => "20", "tabindex" => 200))."
 	<div id='reply-preview' class='preview'></div>
-	<div class='editButtons'>".
+	<div class='editButtons'>".        
+        '<a href="#" id="reply-previewCheckbox" onclick="ETConversation.togglePreview(\'reply\',this)" accesskey="p" tabindex="250" title="Preview Post" class="big">Preview Post</a>
+        '.
+        
 	$form->button("postReply", !$conversation["conversationId"] ? T("Start Conversation") : T("Post a Reply"), array("class" => "big submit postReply", "tabindex" => 300)).
-	"<span class='buttonGroup'>".
-	$form->button("saveDraft", T("Save Draft"), array("class" => "saveDraft", "tabindex" => 400))." ".
+        "<span class='buttonGroup'>".
+        $form->button("saveDraft", T("Save Draft"), array("class" => "saveDraft", "tabindex" => 400))." ".
 	$form->button("discardDraft", T("Discard Draft"), array("class" => "discardDraft")).
 	"</span></div>";
 

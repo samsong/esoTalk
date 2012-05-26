@@ -1294,11 +1294,14 @@ protected function getEditControls($id)
 
 	$this->trigger("getEditControls", array(&$controls, $id));
 
+	
 	if (!empty($controls)) {
 		array_unshift($controls, "<span class='formattingButtons'>");
 		$controls[] = "</span>";
-		$controls[] = "<label class='previewCheckbox'><input type='checkbox' id='$id-previewCheckbox' onclick='ETConversation.togglePreview(\"$id\",this.checked)' accesskey='p'/> ".T("Preview")."</label>";
+		// Preview Checkbox moved to post buttons footer next to post button
+		// $controls[] = "<label class='previewCheckbox'><input type='checkbox' id='$id-previewCheckbox' onclick='ETConversation.togglePreview(\"$id\",this.checked)' accesskey='p'/> ".T("Preview")."</label>";
 	}
+	
 
 	return $controls;
 }

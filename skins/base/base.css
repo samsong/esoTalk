@@ -60,7 +60,7 @@ span.highlight {background:#fdef34; border:1px solid #fcef98; padding:1px 3px; b
 
 
 /* "Go to top" and "back to ..." links (when they're floating) */
-.floatingLink {position:fixed; background:#eee; background:rgba(238, 238, 238, 0.75); border:1px solid #ccc; border-color:rgba(0, 0, 0, 0.15); font-size:120%; z-index:500; border-radius:3px; color:#444 !important; text-shadow:none}
+.floatingLink {position:fixed; background:#eee; background:rgba(238, 238, 238); border:1px solid #ccc; border-color:rgba(0, 0, 0, 0.15); font-size:120%; z-index:500; border-radius:3px; color:#444 !important; text-shadow:none}
 #goToTop a.floatingLink {bottom:-4px; right:10px; padding:5px 12px 9px}
 #backButton.floatingLink {top:15px; left:0; padding:3px; border-radius:0 2px 2px 0}
 #backButton.floatingLink span {display:none}
@@ -458,7 +458,7 @@ a.deleteLink:hover {color:#f00 !important; text-decoration:line-through}
 .highlight .postContent {background-color:#ffd}
 .highlight .postContent:after {border-color:#ffd}
 
-.postHeader {margin-bottom:2px; padding:7px 7px 7px 12px; overflow:hidden; color:#888}
+.postHeader {margin-bottom:2px; padding:0 7px 0 12px; height:30px; line-height:30px; overflow:hidden; color:#888}
 .postHeader h3 {display:inline; font-size:110%; margin:0}
 .postHeader h3, .postHeader h3 a {color:#000}
 .postHeader .info {display:inline}
@@ -469,7 +469,7 @@ a.deleteLink:hover {color:#f00 !important; text-decoration:line-through}
 .postBody img {vertical-align:bottom; max-width:100%}
 .postBody ul {list-style-type:disc}
 
-.deleted .postHeader {margin:0; padding:6px 5px 6px 12px}
+.deleted .postHeader {margin:0; padding:0 5px 0 12px; height:30px; line-height:30px;}
 .deleted .postHeader * {color:#888}
 .deleted .controls {margin-top:1px}
 .deleted .thing {background:#f2f2f2; border:0; -webkit-box-shadow:none; box-shadow:none}
@@ -493,7 +493,7 @@ code {background:#eee}
 
 /* Edit post */
 .post.edit .postBody {padding:0; overflow:hidden}
-.post.edit .controls {margin-top:0}
+.post.edit .controls {margin-top:0; overflow:hidden}
 .post .postBody textarea {height:25em; width:98%; border-style:dashed; border-width:1px 0; border-radius:0; resize:none; padding:12px; line-height:1.5em; outline:0}
 .post .postBody .preview {padding:0 12px}
 .post .editButtons {padding:3px 7px 7px; text-align:right; overflow:hidden}
@@ -615,7 +615,7 @@ input.error, input.error:focus {border-color:#f59e79 !important}
 /* Structured forms */
 .form {margin:0; padding:0}
 .form > li {display:block; list-style:none; margin-bottom:7px; padding-left:150px; overflow:hidden}
-.form > li > label {line-height:1.8em; margin:0 10px 1px 0; width:140px; margin-left:-150px; float:left}
+.form > li > label {line-height:1.8em; margin:0 10px 1px 0; width:140px; margin-left:-150px; float:left; text-align:right}
 .form > li > small {font-size:85%; margin:0 0 5px 0; padding:5px 10px; display:block; padding:0; background:none; border:0}
 .form > li.sep {border-top:1px solid #e5e5e5; border-bottom:1px solid #fff; margin:15px 0}
 .checkboxGroup {line-height:1.7em}
@@ -627,7 +627,7 @@ input.error, input.error:focus {border-color:#f59e79 !important}
 
 /* Buttons */
 .button {height:23px; cursor:pointer; padding:1px 10px 3px; border:1px solid #bbb; border-radius:3px; line-height:19px; margin:0; font-size:85%}
-.button.big {height:26px; font-size:100%; padding:0 10px 2px; line-height:25px}
+a.big, .button.big {height:26px; font-size:100%; padding:0 10px 2px; line-height:25px}
 .button.cancel { opacity:0.5}
 .button.cancel:hover { opacity:1}
 
