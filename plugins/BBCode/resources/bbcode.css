@@ -1,14 +1,14 @@
 [class*=bbcode-] {display:inline-block}
 a[class*=bbcode-] {height:25px;}
 [class*=bbcode-] span {text-indent:-999px; width:18px; height:25px; display:inline-block; background-image:url(formattingIcons.png)}
-.bbcode-b span {background-position:-3px 0}
-.bbcode-i span {background-position:-28px 0}
-.bbcode-u span {background-position:-196px 0}
-.bbcode-sub span {background-position:-220px 0}
-.bbcode-sup span {background-position:-244px 0}
-.bbcode-s span {background-position:-76px 0}
-.bbcode-center span {background-position:-171px 0}
-.bbcode-h span {background-position:-52px 0}
-.bbcode-link span {background-position:-100px 0}
-.bbcode-img span {background-position:-124px 0}
-.bbcode-fixed span {background-position:-148px 0}
+.bbcode-b span {background-position:-3px 2px}
+.bbcode-i span {background-position:-28px 2px}
+.bbcode-u span {background-position:-196px 2px}
+.bbcode-sub span {background-position:-220px 2px}
+.bbcode-sup span {background-position:-244px 2px}
+.bbcode-s span {background-position:-76px 2px}
+.bbcode-center span {background-position:-171px 2px}
+.bbcode-h span {background-position:-52px 2px}
+.bbcode-link span {background-position:-100px 2px}
+.bbcode-img span {background-position:-124px 2px}
+.bbcode-fixed span {background-position:-148px 2px}

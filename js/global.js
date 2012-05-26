@@ -402,7 +402,7 @@ showSheet: function(id, content, callback) {
 	ETSheet.sheetStack.push(id);
 
 	// Position the page wrapper so that the browser scrollbars will no longer affect it. The browser scrollbars will become connected to the sheet content.
-	$("#wrapper").addClass("sheetActive").css({position: "fixed", top: -$(document).scrollTop(), width: "100%"});
+	$("#wrapper").addClass("sheetActive").css({position: "relative", top: -$(document).scrollTop(), width: "100%"});
 
 	// Position the sheet.
 	sheet.addClass("active").css({position: "absolute", left: "50%", marginLeft: -sheet.width() / 2});
@@ -511,8 +511,10 @@ showPopup: function(id, button, options) {
 
 	// Show and position the popup.
 	popup
-		.css({position: "absolute", top: button.outerHeight(true) - 1 - parseInt(button.css("marginBottom")) + (options.offset ? options.offset[1] || 0 : 0)})
+		.css({position: "absolute", top: button.outerHeight(true) - 1 - parseInt(button.css("marginBottom")) + 3 + (options.offset ? options.offset[1] || 0 : 0)})
 		.css(options.alignment, 0)
+		.addClass('withArrow')
+		.addClass('withArrowTop')
 		.show()
 		.addClass(options.alignment)
 		.data("options", options);
@@ -933,7 +935,7 @@ init: function() {
 		var that = this;
 
 		ETPopup.showPopup("notificationsPopup", $(this), {
-			alignment: "right",
+			alignment: "left",
 			callbackOpen: function() {
 
 				// If we need to reload the notification popup content, clear its contents now.
