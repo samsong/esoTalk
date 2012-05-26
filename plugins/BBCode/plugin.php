@@ -48,11 +48,15 @@ public function handler_conversationController_getEditControls($sender, &$contro
 	addToArrayString($controls, "fixed", "<a href='javascript:BBCode.fixed(\"$id\");void(0)' title='".T("Fixed")."' class='bbcode-fixed'><span>".T("Fixed")."</span></a>", 0);
 	addToArrayString($controls, "image", "<a href='javascript:BBCode.image(\"$id\");void(0)' title='".T("Image")."' class='bbcode-img'><span>".T("Image")."</span></a>", 0);
 	addToArrayString($controls, "link", "<a href='javascript:BBCode.link(\"$id\");void(0)' title='".T("Link")."' class='bbcode-link'><span>".T("Link")."</span></a>", 0);
-	addToArrayString($controls, "strike", "<a href='javascript:BBCode.strikethrough(\"$id\");void(0)' title='".T("Strike")."' class='bbcode-s'><span>".T("Strike")."</span></a>", 0);
 	addToArrayString($controls, "header", "<a href='javascript:BBCode.header(\"$id\");void(0)' title='".T("Header")."' class='bbcode-h'><span>".T("Header")."</span></a>", 0);
+	addToArrayString($controls, "center", "<a href='javascript:BBCode.center(\"$id\");void(0)' title='".T("Center")."' class='bbcode-center'><span>".T("Center")."</span></a>", 0);
+	addToArrayString($controls, "subscript", "<a href='javascript:BBCode.subscript(\"$id\");void(0)' title='".T("Subscript")."' class='bbcode-sub'><span>".T("Subscript")."</span></a>", 0);
+	addToArrayString($controls, "superscript", "<a href='javascript:BBCode.superscript(\"$id\");void(0)' title='".T("Superscript")."' class='bbcode-sup'><span>".T("Superscript")."</span></a>", 0);
+	addToArrayString($controls, "strike", "<a href='javascript:BBCode.strikethrough(\"$id\");void(0)' title='".T("Strike")."' 
+class='bbcode-s'><span>".T("Strike")."</span></a>", 0);
+	addToArrayString($controls, "underline", "<a href='javascript:BBCode.underline(\"$id\");void(0)' title='".T("Underline")."' class='bbcode-u'><span>".T("Underline")."</span></a>", 0);
 	addToArrayString($controls, "italic", "<a href='javascript:BBCode.italic(\"$id\");void(0)' title='".T("Italic")."' class='bbcode-i'><span>".T("Italic")."</span></a>", 0);
 	addToArrayString($controls, "bold", "<a href='javascript:BBCode.bold(\"$id\");void(0)' title='".T("Bold")."' class='bbcode-b'><span>".T("Bold")."</span></a>", 0);
-	addToArrayString($controls, "center", "<a href='javascript:BBCode.center(\"$id\");void(0)' title='".T("Center")."' class='bbcode-center'><span>".T("Center")."</span></a>", 0);
 }
 
 
@@ -104,9 +108,18 @@ public function handler_format_format($sender)
 
 	// Italics: [i]italic text[/i]
 	$sender->content = preg_replace("/\[i\](.*?)\[\/i\]/si", "<i>$1</i>", $sender->content);
+	
+	// Underline: [u]underlined text[/u]
+	$sender->content = preg_replace("/\[u\](.*?)\[\/u\]/si", "<u>$1</u>", $sender->content);
 
 	// Strikethrough: [s]strikethrough[/s]
 	$sender->content = preg_replace("/\[s\](.*?)\[\/s\]/si", "<del>$1</del>", $sender->content);
+	
+	// Superscript: [sup]superscript[/sup]
+	$sender->content = preg_replace("/\[sup\](.*?)\[\/sup\]/si", "<sup>$1</sup>", $sender->content);
+	
+	// Subscript: [sub]subscript[/sub]
+	$sender->content = preg_replace("/\[sub\](.*?)\[\/sub\]/si", "<sub>$1</sub>", $sender->content);
 	
 	// Center: [center]center text[/center]
 	$sender->content = preg_replace("|\[center\](.*?)\[/center\]|si", "<center>$1</center>", $sender->content);
