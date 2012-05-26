@@ -1048,6 +1048,7 @@ wrapText: function(textarea, tagStart, tagEnd, selectArgument, defaultArgumentVa
 togglePreview: function(id, preview) {
 	// If the preview box is checked...
 	if (preview && !$("#" + id + " .previewReply").hasClass('previewOn')) {
+		//alert('on');
 		// Hide the formatting buttons.
 		$("#" + id + " .formattingButtons").hide();
 		$("#" + id + " .previewReply").html('Edit Post').addClass('previewOn');
@@ -1072,6 +1073,7 @@ togglePreview: function(id, preview) {
 
 	// The preview box isn't checked...
 	else if($("#" + id + " .previewReply").hasClass('previewOn')) {
+		//alert('off');
 		// Show the formatting buttons and the textarea; hide the preview area.
 		$("#" + id + " .formattingButtons").show();
 		$("#" + id + " textarea").show();

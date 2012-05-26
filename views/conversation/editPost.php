@@ -22,6 +22,7 @@ $post = $data["post"];
 $body = $form->input("content", "textarea", array("cols" => "200", "rows" => "20"))."
 	<div id='p".$post["postId"]."-preview' class='preview'></div>
 	<div class='editButtons'>".
+        '<a id="reply-previewCheckbox" onclick="ETConversation.togglePreview(\'p'.$post["postId"].'\',this)" accesskey="p" tabindex="250" title="Preview Post" class="big previewReply">Preview Post</a>'.
 	$form->saveButton()." ".
 	$form->cancelButton()."</div>";
 
