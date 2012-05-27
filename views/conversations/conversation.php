@@ -61,9 +61,11 @@ echo "<a href='".URL(searchURL("", $channel["slug"]))."' class='channel channel-
 ?></div>
 <div class='col-lastPost'><?php
 echo "<span class='action'>".avatar($conversation["lastPostMemberId"], $conversation["lastPostMemberAvatarFormat"], "thumb"), " ",
-	sprintf(T("%s posted %s"),
-		"<span class='lastPostMember name'>".memberLink($conversation["lastPostMemberId"], $conversation["lastPostMember"])."</span>",
-		"<span class='lastPostTime'>".relativeTime($conversation["lastPostTime"], true)."</span>"),
+	sprintf(T("%s%s %s%s"),
+		"<a href='".URL($conversationURL."/last")."' class='jumpToLast'>",
+		"<span class='lastPostMember name'>".$conversation["lastPostMember"]."</span>",
+		"<span class='lastPostTime'>".relativeTime($conversation["lastPostTime"], true)."</span>",
+		"</a>"),
 	"</span>";
 ?></div>
 <div class='col-replies'><?php
