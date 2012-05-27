@@ -448,7 +448,7 @@ a.deleteLink:hover {color:#f00 !important; text-decoration:line-through}
 /* Posts */
 .postList, .activityList {list-style-type:none; margin:0; padding:0; position:relative}
 
-.timeMarker {padding:7px 13px; text-transform:uppercase; font-size:85%; letter-spacing:1px; background:#f7f7f7; color:#aaa; display:inline-block; clear:both; border-radius:3px; margin-bottom:15px}
+.timeMarker {padding:7px 13px; text-transform:uppercase; font-size:85%; letter-spacing:1px; background:#f7f7f7; color:#777; display:inline-block; clear:both; border-radius:3px; margin-bottom:15px}
 
 .post {margin-bottom:15px; padding-left:74px; padding-bottom:2px; position:relative; overflow:hidden}
 .post div.avatar {float:left; margin-left:-74px}
