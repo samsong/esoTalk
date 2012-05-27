@@ -511,10 +511,8 @@ showPopup: function(id, button, options) {
 
 	// Show and position the popup.
 	popup
-		.css({position: "absolute", top: button.outerHeight(true) - 1 - parseInt(button.css("marginBottom")) + 3 + (options.offset ? options.offset[1] || 0 : 0)})
+		.css({position: "absolute", top: button.outerHeight(true) - 1 - parseInt(button.css("marginBottom")) + (options.offset ? options.offset[1] || 0 : 0)})
 		.css(options.alignment, 0)
-		.addClass('withArrow')
-		.addClass('withArrowTop')
 		.show()
 		.addClass(options.alignment)
 		.data("options", options);

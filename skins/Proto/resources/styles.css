@@ -33,7 +33,7 @@ p, ul, pre {line-height:1.5em}
 #wrapper { min-width:760px; max-width:920px;margin:0 auto;}
 #hdr-content, #body-content, #ftr-content {margin:0 auto; padding:0 20px}
 #body, #body-content {background:url(shadow.png) repeat-x}
-#body-content {background-color:#fff}
+#body-content {background-color:#fff; overflow:hidden}
 #body-content {padding-bottom:20px; border:solid #ddd; border-width:0 1px 2px; border-radius:0 0 3px 3px}
 #body-content .standalone {padding:20px 0 0}
 /*#hdr-content, #ftr-content {max-width:1140px}*/
@@ -56,7 +56,7 @@ p, ul, pre {line-height:1.5em}
 #userMenu .item-user .avatar {vertical-align:middle; margin:-5px 8px -5px 0}
 #userMenu.menu > li {margin-left:18px; text-align:left}
 
-#hdr .button {border:1px solid #333; border-color:rgba(0, 0, 0, 0.5); border-radius:3px; color:#fff; text-shadow:0 -1px rgba(0, 0, 0, 0.5); font-size:100%; padding:7px 10px; -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, 0.08); box-shadow:0 1px 0 rgba(255, 255, 255, 0.08); background:url(hdr-button.png) repeat-x; margin:-5px 0}
+#hdr .button {border:1px solid #333; border-color:rgba(0, 0, 0, 0.5); border-radius:3px; color:#fff; text-shadow:1px -1px rgba(0, 0, 0, 0.5); font-size:100%; padding:7px 10px; -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, 0.08); box-shadow:0 1px 0 rgba(255, 255, 255, 0.08); background:url(hdr-button.png) repeat-x; margin:-5px 0}
 #hdr .button:active {background-position:0 -30px}
 
 

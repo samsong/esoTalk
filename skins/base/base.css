@@ -164,8 +164,8 @@ span.highlight {background:#fdef34; border:1px solid #fcef98; padding:1px 3px; b
 .message.hasIcon img {float:left; margin:-2px 8px -2px -3px}
 .message code {background:none}
 
-.message.warning {background:rgba(150, 0, 0, 0.8); border:0; color:#fff; text-shadow:0 1px #000}
-.message.success {background:rgba(0, 50, 0, 0.8); border:0; color:#fff; text-shadow:0 1px #000}
+.message.warning {background:rgba(150, 0, 0, 0.8); border:0; color:#fff; text-shadow:1px 1px #000}
+.message.success {background:rgba(0, 50, 0, 0.8); border:0; color:#fff; text-shadow:1px 1px #000}
 
 
 /* Class that can be applied to an <a> in a message to make the full message clickable. */
@@ -179,8 +179,8 @@ span.highlight {background:#fdef34; border:1px solid #fcef98; padding:1px 3px; b
 .withArrow.popup:before {border-color:#666}
 .withArrow.popup:after {border-color:#fff}
 
-.popup.right {border-radius:4px 4px 4px 4px}
-.popup.left {border-radius:4px 4px 4px 4px}
+.popup.right {border-radius:4px 0 4px 4px}
+.popup.left {border-radius:0 4px 4px 4px}
 
 
 /* Popup menus */
@@ -188,7 +188,7 @@ span.highlight {background:#fdef34; border:1px solid #fcef98; padding:1px 3px; b
 .popupMenu li > a, .popupMenu li > span {display:block; padding:2px 25px 2px 20px; overflow:hidden; white-space:nowrap}
 .popupMenu li > a {color:#444 !important}
 .popupMenu li > span {color:#888 !important}
-.popupMenu li > a:hover, ul.popupMenu li.selected > a {text-decoration:none; background:#3276ce; color:#fff !important; text-shadow:0 -1px #1c408e}
+.popupMenu li > a:hover, ul.popupMenu li.selected > a {text-decoration:none; background:#3276ce; color:#fff !important; text-shadow:1px -1px #1c408e}
 .popupMenu li > a:hover *, ul.popupMenu li.selected > a * {color:#fff !important}
 .popupMenu li.sep {border-top:1px solid #ccc; margin:4px 5px}
 
