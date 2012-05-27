@@ -112,11 +112,11 @@ span.highlight {background:#fdef34; border:1px solid #fcef98; padding:1px 3px; b
 
 .control-settings {background-position:-14px -66px}
 .control-add {background-position:-14px -98px}
-.control-delete, .control-reset {background-position:-14px -190px}
-.control-restore {background-position:-14px -258px}
-.control-search {background-position:-14px -290px}
-.control-quote {background-position:-14px -382px}
-.control-edit {background-position:-14px -414px}
+.control-delete, .control-reset {background-position:-14px -194px}
+.control-restore {background-position:-14px -262px}
+.control-search {background-position:-14px -294px}
+.control-quote {background-position:-14px -386px}
+.control-edit {background-position:-14px -418px}
 
 
 /* Controls (icons with hover/click effects) */

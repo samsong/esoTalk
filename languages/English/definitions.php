@@ -338,7 +338,7 @@ $definitions["Write a reply..."] = "Write a reply...";
 
 $definitions["Yes"] = "Yes";
 $definitions["You can manage channel-specific permissions on the channels page."] = "You can manage channel-specific permissions on the channels page.";
-$definitions["Your current password"] = "Your current password";
+$definitions["Your current password"] = "Current password";
 
 
 // Messages.
@@ -379,7 +379,7 @@ $definitions["message.fileUploadFailedMove"] = "The file you uploaded could not 
 $definitions["message.fileUploadNotImage"] = "The file you uploaded is not an image in an acceptable format.";
 $definitions["message.fileUploadTooBig"] = "The file you selected could not be uploaded because it is too big.";
 $definitions["message.forgotPasswordHelp"] = "So, you forgot your password! Don't worry, it happens all the time. Simply enter your email address and we'll send you instructions on how to set up a new one.";
-$definitions["message.fulltextKeywordWarning"] = "Note that keywords less than 4 characters in length, and common English words such as 'the' and 'for', aren't included in the search criteria.";
+$definitions["message.fulltextKeywordWarning"] = "Keywords less than 4 characters long, and common English words such as 'the' and 'for', are ignored.";
 $definitions["message.gambitsHelp"] = "Gambits are phrases that describe what you are looking for. Click on a gambit to insert it into the search field. Double-click on a gambit to instantly search for it. Normal search keywords work too!";
 $definitions["message.gdNotEnabledWarning"] = "The <strong>GD extension</strong> is not enabled.<br/><small>This is required to resize and save avatars. Get your host or administrator to install/enable it.</small>";
 $definitions["message.greaterMySQLVersionRequired"] = "You must have <strong>MySQL 4 or greater</strong> installed and the <a href='http://php.net/manual/en/mysql.installation.php' target='_blank'>MySQL extension enabled in PHP</a>.<br/><small>Please install/upgrade both of these requirements or request that your host or administrator install them.</small>";
@@ -426,7 +426,7 @@ $definitions["message.postNotFound"] = "The post you're looking for could not be
 $definitions["message.postTooLong"] = "Your post is really, really long! Too long! The maximum number of characters allowed is %s. That's really long!";
 $definitions["message.preInstallErrors"] = "The following errors were found with your esoTalk setup. They must be resolved before you can continue the installation.";
 $definitions["message.preInstallWarnings"] = "The following errors were found with your esoTalk setup. You can continue the esoTalk install without resolving them, but some esoTalk functionality may be limited.";
-$definitions["message.reduceNumberOfGambits"] = "Reduce the number of gambits or search keywords you're using to find a broader range of conversations.";
+$definitions["message.reduceNumberOfGambits"] = "Try reducing the number of gambits or search keywords.";
 $definitions["message.registerGlobalsWarning"] = "PHP's <strong>register_globals</strong> setting is enabled.<br/><small>While esoTalk can run with this setting on, it is recommended that it be turned off to increase security and to prevent esoTalk from having problems.</small>";
 $definitions["message.registrationClosed"] = "Registration on this forum is not open to the public.";
 $definitions["message.removeDirectoryWarning"] = "Hey! Looks like you haven't deleted the <code>%s</code> directory like we told you to! You probably should, just to make sure those hackers can't do anything naughty.";
