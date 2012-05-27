@@ -34,7 +34,8 @@ p, ul, pre {line-height:1.5em}
 #hdr-content, #body-content, #ftr-content {margin:0 auto; padding:0 20px}
 #body, #body-content {background:url(shadow.png) repeat-x}
 #body-content {background-color:#fff}
-#body-content {padding:20px; border:solid #ddd; border-width:0 1px 2px; border-radius:0 0 3px 3px}
+#body-content {padding-bottom:20px; border:solid #ddd; border-width:0 1px 2px; border-radius:0 0 3px 3px}
+#body-content .standalone {padding:20px 0 0}
 /*#hdr-content, #ftr-content {max-width:1140px}*/
 
 

@@ -48,7 +48,7 @@ span.highlight {background:#fdef34; border:1px solid #fcef98; padding:1px 3px; b
 
 
 /* Body */
-.bodyHeader {padding:0 0 12px; border:0; border-bottom:1px solid #ddd; margin-bottom:10px}
+.bodyHeader {padding:15px 0 12px; border:0; border-bottom:1px solid #ddd; margin-bottom:10px}
 .bodyHeader.floating {-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.05); box-shadow:0 1px 1px rgba(0, 0, 0, 0.05); background:#fff; margin-left:-20px; margin-right:-20px; padding-left:20px; padding-right:20px}
 
 
