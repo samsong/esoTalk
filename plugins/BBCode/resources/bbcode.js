@@ -13,3 +13,6 @@ image: function(id) {ETConversation.wrapText($("#"+id+" textarea"), "[img]", "[/
 fixed: function(id) {ETConversation.wrapText($("#"+id+" textarea"), "[code]", "[/code]");},
 
 };
+$(document).ready(function() {
+	$.SyntaxHighlighter.init({'debug': true,'alternateLines': true,'prettifyBaseUrl':ET.webPath+'/plugins/BBCode/resources/jquery-syntaxhighlighter/prettify','baseUrl':ET.webPath+'/plugins/BBCode/resources/jquery-syntaxhighlighter'});
+});

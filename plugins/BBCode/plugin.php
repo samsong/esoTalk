@@ -14,6 +14,9 @@ ET::$pluginInfo["BBCode"] = array(
 	"license" => "GPLv2"
 );
 
+// 9:03 PM 4/06/2012 samsong
+// SYNTAX HIGHLIGHTED - Configure by editing resources/bbcode.js line #17
+// Refer: http://balupton.github.com/jquery-syntaxhighlighter/demo/#options
 
 /**
  * BBCode Formatter Plugin
@@ -32,6 +35,7 @@ class ETPlugin_BBCode extends ETPlugin {
  */
 public function handler_conversationController_renderBefore($sender)
 {
+	$sender->addJSFile($this->getResource("jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.min.js"));
 	$sender->addJSFile($this->getResource("bbcode.js"));
 	$sender->addCSSFile($this->getResource("bbcode.css"));
 }
@@ -140,7 +144,7 @@ public function handler_format_afterFormat($sender)
 	$sender->content = preg_replace("/<code><\/code>/ie", "'<code>' . array_shift(\$this->inlineFixedContents) . '</code>'", $sender->content);
 
 	// Retrieve the contents of the block <pre> tags from the array in which they are stored.
-	$sender->content = preg_replace("/<pre><\/pre>/ie", "'<pre>' . array_pop(\$this->blockFixedContents) . '</pre>'", $sender->content);
+	$sender->content = preg_replace("/<pre><\/pre>/ie", "'<pre class=\"highlight\">' . array_pop(\$this->blockFixedContents) . '</pre>'", $sender->content);
 }
 
 }
